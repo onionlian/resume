@@ -1,5 +1,12 @@
 {
     "skills": [
-        { "name": "PHP" }
+        { "name": "PHP", "i": "fa-wrench", "p": "Codeigniter, Laravel, Wordpress" },
+        { "name": "Javascript", "i": "fa-file-code-o", "p": "jQuery, Angular, Vue" },
+        { "name": "CSS", "i": "fa-file-image-o", "p": "css, scss" },
+        { "name": "More", "i": "fa-lightbulb-o", "p": "git, mysql" }
+    ],
+
+    "works":[
+    	{"title":"test"}
     ]
 }

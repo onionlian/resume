@@ -1,92 +1,45 @@
 var app = new Vue({
     el: '#app',
     data: {
+        status: { menu: false, toTop: false },
         my: {},
     },
 
     mounted: function() {
-        $.getJSON('data/detail.json', function(data) {
-            
-        });
-    }
-})
+        this.init();
+        $(document).scroll(this.bindToTop);
+    },
 
+    methods: {
+        init: function() {
+            var that = this;
+            $.getJSON('data/detail.json', function(data) {
+                // console.log(data);
+                that.my = data;
+            });
+        },
 
-
-
-$(function() {
-    // Scrolls to the selected menu item on the page
-    $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        animateTo: function(id, event) {
+            var that = this;
+            var target = $('#' + id);
             if (target.length) {
                 $('html,body').animate({
                     scrollTop: target.offset().top
-                }, 1000);
+                }, 1000, function() {
+                    location.hash = id;
+                    that.status.menu = false;
+                });
                 return false;
             }
-        }
-    });
+        },
 
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
+        setMenu: function(status) {
+            this.status.menu = (status) ? status : !this.status.menu;
+        },
 
-    //#to-top button appears after scrolling
-    var fixed = false;
-    $(document).scroll(function() {
-        if ($(this).scrollTop() > 250) {
-            if (!fixed) {
-                fixed = true;
-                // $('#to-top').css({position:'fixed', display:'block'});
-                $('#to-top').show("slow", function() {
-                    $('#to-top').css({
-                        position: 'fixed',
-                        display: 'block'
-                    });
-                });
-            }
-        } else {
-            if (fixed) {
-                fixed = false;
-                $('#to-top').hide("slow", function() {
-                    $('#to-top').css({
-                        display: 'none'
-                    });
-                });
-            }
+        bindToTop: function() {
+            var nowTop = $('body').scrollTop();
+            this.status.toTop = (nowTop < 250) ? false : true;
         }
-    });
-    // Disable Google Maps scrolling
-    // See http://stackoverflow.com/a/25904582/1607849
-    // Disable scroll zooming and bind back the click event
-    var onMapMouseleaveHandler = function(event) {
-        var that = $(this);
-        that.on('click', onMapClickHandler);
-        that.off('mouseleave', onMapMouseleaveHandler);
-        that.find('iframe').css("pointer-events", "none");
     }
-    var onMapClickHandler = function(event) {
-            var that = $(this);
-            // Disable the click handler until the user leaves the map area
-            that.off('click', onMapClickHandler);
-            // Enable scrolling zoom
-            that.find('iframe').css("pointer-events", "auto");
-            // Handle the mouse leave event
-            that.on('mouseleave', onMapMouseleaveHandler);
-        }
-        // Enable map zooming with mouse scroll when the user clicks the map
-    $('.map').on('click', onMapClickHandler);
-
-    $('#sidebar-wrapper li a').click(function() {
-        $("#menu-close").click();
-    });
-});
+})
