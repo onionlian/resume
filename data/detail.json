@@ -6,7 +6,11 @@
         { "name": "More", "i": "fa-lightbulb-o", "p": "git, mysql" }
     ],
 
-    "works":[
-    	{"title":"test"}
+    "works": [
+    	{ "title": "自訂轉盤", "link": "http://z358z358.github.io/Roulette/" },
+    	{ "title": "麻將紀錄", "link": "http://z358z358.github.io/MJ/" },
+    	{ "title": "Ptt推文計算 ＆ youtube播放", "link": "http://z358z358.qov.tw/" },
+        { "title": "Gamebase", "link": "http://www.gamebase.com.tw/" },
+        { "title": "Go給利", "link": "http://www.geilionline.com/" }
     ]
 }

@@ -4,13 +4,28 @@
 }
 
 #to-top {
-	visibility: hidden;
-	opacity: 0;
-	transition: visibility 0s, opacity 0.5s linear;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
     display: block;
 }
 
 #to-top.show {
-	visibility: visible;
-	opacity: 1;
+    visibility: visible;
+    opacity: 1;
+}
+
+.portfolio-item{
+    max-height: 200px;
+    overflow: hidden;
+    transition: max-height 0.1s ease-out;
+}
+
+.portfolio-item:hover {
+    max-height: 2000px;
+    transition: max-height 0.5s ease-in;
+}
+
+.div-work{
+	border-top:1px solid #ddd;
 }

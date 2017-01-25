@@ -115,13 +115,13 @@
                         <h2>Our Work</h2>
                         <hr class="small">
                         <div class="row">
-                            <div class="col-md-6" v-for="(work,index) in my.works">
+                            <div class="col-md-6 div-work" v-for="(work,index) in my.works">
+                                <h4 v-text="work.title"></h4>
+                                <span :class="tag" v-for="tag in work.tags" v-text="tag"></span>
                                 <div class="portfolio-item">
                                     <a :href="work.link">
-                                        <img class="img-portfolio img-responsive" :src="'img/portfolio-'+index+'.jpg'">
+                                        <img class="img-portfolio img-responsive" :src="'img/portfolio-'+(my.works.length-index)+'.jpg'">
                                     </a>
-                                    <h4 v-text="work.title"></h4>
-                                    <span :class="tag" v-for="tag in work.tags" v-text="tag"></span>
                                 </div>
                             </div>
                         </div>
@@ -177,7 +177,7 @@
                     </div>
                 </div>
             </div>
-            <a id="to-top" href="#top" class="btn btn-dark btn-lg" :class="{show:status.toTop}"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+            <a id="to-top" href="#" class="btn btn-dark btn-lg" :class="{show:status.toTop}" @click="animateTo('top')"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
         </footer>
     </div>
     <!-- jQuery -->
