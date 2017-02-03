@@ -1,8 +1,14 @@
 var app = new Vue({
     el: '#app',
     data: {
-        status: { menu: false, toTop: false },
+        status: { menu: false, toTop: false, listMore: false },
         my: {},
+    },
+
+    filters:{
+        lowercase:function(string){
+            return string.toLowerCase();
+        }
     },
 
     mounted: function() {
@@ -13,7 +19,7 @@ var app = new Vue({
     methods: {
         init: function() {
             var that = this;
-            $.getJSON('data/detail.json', function(data) {
+            $.getJSON('data/detail.json?123', function(data) {
                 // console.log(data);
                 that.my = data;
             });

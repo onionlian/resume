@@ -7,10 +7,16 @@
     ],
 
     "works": [
-    	{ "title": "自訂轉盤", "link": "http://z358z358.github.io/Roulette/" },
-    	{ "title": "麻將紀錄", "link": "http://z358z358.github.io/MJ/" },
-    	{ "title": "Ptt推文計算 ＆ youtube播放", "link": "http://z358z358.qov.tw/" },
-        { "title": "Gamebase", "link": "http://www.gamebase.com.tw/" },
-        { "title": "Go給利", "link": "http://www.geilionline.com/" }
+        { "title": "iPhone 購機方案 - 中華電信大4G", "link": "http://iphone.emome.net/", "tags": ["RWD", "SCSS", "jQuery"] },
+        { "title": "ICA - 台中常春藤美式寄宿學校", "link": "http://ica.ivyjhs.tc.edu.tw/", "tags": ["Wordpress"] },
+        { "title": "Lably", "link": "https://mylably.com/", "tags": ["Wordpress", "Woocommerce"] },
+        { "title": "Neiru", "link": "https://neiru.me/", "tags": ["Wordpress", "Woocommerce"] },
+        { "title": "GENESUS", "link": "http://genesus.co/", "tags": ["Laravel", "Angular"] },
+        { "title": "FABEL", "link": "http://fabel.us/", "tags": ["Codeigniter", "Angular"] },
+        { "title": "自訂轉盤", "link": "http://z358z358.github.io/Roulette/", "tags": ["Vue", "Bootstrap"] },
+        { "title": "麻將紀錄", "link": "http://z358z358.github.io/MJ/", "tags": ["Vue", "Bootstrap"] },
+        { "title": "Ptt推文計算 ＆ youtube播放", "link": "http://z358z358.qov.tw/", "tags": ["jQuery", "Bootstrap"] },
+        { "title": "Gamebase", "link": "http://www.gamebase.com.tw/", "tags": ["php", "jQuery"] },
+        { "title": "Go給利", "link": "http://www.geilionline.com/", "tags": ["php", "jQuery"] }
     ]
 }

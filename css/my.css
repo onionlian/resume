@@ -15,17 +15,87 @@
     opacity: 1;
 }
 
-.portfolio-item{
+.portfolio-list .div-work {
+    display: none;
+}
+
+.portfolio-list .div-work:nth-of-type(1),
+.portfolio-list .div-work:nth-of-type(2),
+.portfolio-list .div-work:nth-of-type(3),
+.portfolio-list .div-work:nth-of-type(4) {
+    display: block;
+}
+
+.portfolio-list.show-more .div-work {
+    display: block;
+}
+
+.portfolio-item {
     max-height: 200px;
     overflow: hidden;
     transition: max-height 0.1s ease-out;
 }
 
 .portfolio-item:hover {
-    max-height: 2000px;
-    transition: max-height 0.5s ease-in;
+    max-height: 500px;
+    transition: max-height 0.3s ease-in;
 }
 
-.div-work{
-	border-top:1px solid #ddd;
+.div-work {
+    border-top: 1px solid #ddd;
+}
+
+.work-tag {
+    font-size: 0.625em;
+    letter-spacing: 1px;
+    background: #fed567;
+    padding: 0.4375em 0.625em;
+    margin-right: 0.375em;
+    margin-bottom: 0.625em;
+    display: inline-block;
+    color: white;
+}
+
+.php {
+    background: #8892BF;
+}
+
+.jquery {
+    background: #0769ad;
+}
+
+.wordpress {
+    background: #23282d;
+}
+
+.woocommerce {
+    background: #a46497;
+}
+
+.scss {
+    background: #b37399;
+}
+
+.rwd {
+    background: #5f91bd;
+}
+
+.laravel {
+    background: #f4645f;
+}
+
+.angular {
+    background: #dd1b16;
+}
+
+.bootstrap {
+    background: #6f5499;
+}
+
+.vue {
+    background: #4fc08d;
+}
+
+.codeigniter {
+    background: #380101;
 }

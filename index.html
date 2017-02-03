@@ -108,16 +108,16 @@
             </div>
         </aside>
         <!-- Portfolio -->
-        <section id="portfolio" class="portfolio">
-            <div class="container">
+        <section id="portfolio" class="portfolio text-center">
+            <div class="container portfolio-list" :class="{'show-more':status.listMore}">
                 <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <div class="col-lg-10 col-lg-offset-1 ">
                         <h2>Our Work</h2>
                         <hr class="small">
                         <div class="row">
                             <div class="col-md-6 div-work" v-for="(work,index) in my.works">
                                 <h4 v-text="work.title"></h4>
-                                <span :class="tag" v-for="tag in work.tags" v-text="tag"></span>
+                                <span class="work-tag" :class="tag | lowercase" v-for="tag in work.tags" v-text="tag"></span>
                                 <div class="portfolio-item">
                                     <a :href="work.link">
                                         <img class="img-portfolio img-responsive" :src="'img/portfolio-'+(my.works.length-index)+'.jpg'">
@@ -126,12 +126,12 @@
                             </div>
                         </div>
                         <!-- /.row (nested) -->
-                        <a href="#" class="btn btn-dark">View More Items</a>
                     </div>
                     <!-- /.col-lg-10 -->
                 </div>
                 <!-- /.row -->
             </div>
+            <a href="javascript:void(0)" class="portfolio-more btn btn-dark" v-show="!status.listMore" @click="status.listMore=true">View More Items</a>
             <!-- /.container -->
         </section>
         <!-- Call to Action -->
