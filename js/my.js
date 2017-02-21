@@ -3,10 +3,18 @@ var app = new Vue({
     data: {
         status: { menu: false, toTop: false, listMore: false },
         my: {},
+        modalIndex: 0,
+        workCount: 0,
     },
 
-    filters:{
-        lowercase:function(string){
+    computed: {
+        modalWork: function() {
+            return (this.my.works) ? this.my.works[this.modalIndex] : {};
+        }
+    },
+
+    filters: {
+        lowercase: function(string) {
             return string.toLowerCase();
         }
     },
@@ -22,6 +30,7 @@ var app = new Vue({
             $.getJSON('data/detail.json?123', function(data) {
                 // console.log(data);
                 that.my = data;
+                that.workCount = data.works.length;
             });
         },
 
@@ -46,6 +55,11 @@ var app = new Vue({
         bindToTop: function() {
             var nowTop = $('body').scrollTop();
             this.status.toTop = (nowTop < 250) ? false : true;
+        },
+
+        showModalWork: function(index) {
+            this.modalIndex = index;
+            $('#myModal').modal();
         }
     }
 })

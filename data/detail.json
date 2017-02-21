@@ -7,16 +7,16 @@
     ],
 
     "works": [
-        { "title": "iPhone 購機方案 - 中華電信大4G", "link": "http://iphone.emome.net/", "tags": ["RWD", "SCSS", "jQuery"] },
-        { "title": "ICA - 台中常春藤美式寄宿學校", "link": "http://ica.ivyjhs.tc.edu.tw/", "tags": ["Wordpress"] },
-        { "title": "Lably", "link": "https://mylably.com/", "tags": ["Wordpress", "Woocommerce"] },
-        { "title": "Neiru", "link": "https://neiru.me/", "tags": ["Wordpress", "Woocommerce"] },
-        { "title": "GENESUS", "link": "http://genesus.co/", "tags": ["Laravel", "Angular"] },
-        { "title": "FABEL", "link": "http://fabel.us/", "tags": ["Codeigniter", "Angular"] },
-        { "title": "自訂轉盤", "link": "http://z358z358.github.io/Roulette/", "tags": ["Vue", "Bootstrap"] },
-        { "title": "麻將紀錄", "link": "http://z358z358.github.io/MJ/", "tags": ["Vue", "Bootstrap"] },
-        { "title": "Ptt推文計算 ＆ youtube播放", "link": "http://z358z358.qov.tw/", "tags": ["jQuery", "Bootstrap"] },
-        { "title": "Gamebase", "link": "http://www.gamebase.com.tw/", "tags": ["php", "jQuery"] },
-        { "title": "Go給利", "link": "http://www.geilionline.com/", "tags": ["php", "jQuery"] }
+        { "title": "iPhone 購機方案 - 中華電信大4G", "link": "http://iphone.emome.net/", "tags": ["RWD", "SCSS", "jQuery"], "detail": "活動頁面；將PSD製作成頁面，設定RWD。" },
+        { "title": "ICA - 台中常春藤美式寄宿學校", "link": "http://ica.ivyjhs.tc.edu.tw/", "tags": ["RWD", "Wordpress", "Twig"], "detail": "Custom Plugin；自訂event post type，自訂short code撈取event post，使用twig template。" },
+        { "title": "Lably", "link": "https://mylably.com/", "tags": ["RWD", "Wordpress", "Woocommerce", "Twig"], "detail": "Custom Plugin；在WooCommerce（購物車系統）上改寫成線上美甲課程，會員分成老師和學生，接第三方Api（zoom.us），使用twig template。" },
+        { "title": "Neiru", "link": "https://neiru.me/", "tags": ["RWD", "Wordpress", "Woocommerce"], "detail": "維護網站；線上美甲課程，使用membership plugin。" },
+        { "title": "GENESUS", "link": "http://genesus.co/", "tags": ["RWD", "Laravel", "Angular"], "detail": "新網站；主要負責Backend，javascript。" },
+        { "title": "FABEL", "link": "http://fabel.us/", "tags": ["RWD", "Codeigniter", "Angular"], "dead": 1, "detail": "維護網站；主要負責Backend，javascript。" },
+        { "title": "自訂轉盤", "link": "http://z358z358.github.io/Roulette/", "tags": ["RWD", "Vue", "Bootstrap"], "detail": "練習小工具；自訂轉盤、機率、選項。" },
+        { "title": "麻將紀錄", "link": "http://z358z358.github.io/MJ/", "tags": ["RWD", "Vue", "Bootstrap"], "detail": "練習小工具；記錄每回合的結果，及時查看目前的比數。 新增紀錄 照步驟點選，即可設定該局的結果。" },
+        { "title": "Ptt推文計算 ＆ youtube播放", "link": "http://z358z358.qov.tw/", "tags": ["RWD", "jQuery", "Bootstrap"], "detail": "練習小工具；Ptt推文計算，Ptt撈youtube link並依序播放。" },
+        { "title": "Gamebase", "link": "http://www.gamebase.com.tw/", "tags": ["php", "jQuery"], "detail": "正職工作；維護網站，主要負責會員、活動。" },
+        { "title": "Go給利", "link": "http://www.geilionline.com/", "tags": ["php", "jQuery"], "dead": 1, "detail": "正職工作；第一個自己寫的網站，網站功能為遊戲虛寶兌換中心（未完成）。" }
     ]
 }
