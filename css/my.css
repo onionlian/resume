@@ -20,7 +20,8 @@
 }
 
 .portfolio-list .div-work {
-    display: none;
+    /*display: none;*/
+    display: block;
 }
 
 .portfolio-list .div-work:nth-of-type(1),

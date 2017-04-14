@@ -142,7 +142,7 @@
                                 <h4 v-text="work.title"></h4>
                                 <span class="work-tag" :class="tag | lowercase" v-for="tag in work.tags" v-text="tag"></span>
                                 <div class="portfolio-item" @click="showModalWork(index)">
-                                    <img class="img-portfolio img-responsive" :src="'img/portfolio-'+(workCount-index)+'.jpg'">
+                                    <img class="img-portfolio img-responsive" :src="'img/portfolio-'+work.key+'.jpg'">
                                 </div>
                             </div>
                         </div>
@@ -152,7 +152,7 @@
                 </div>
                 <!-- /.row -->
             </div>
-            <a href="javascript:void(0)" class="portfolio-more btn btn-dark" v-show="!status.listMore" @click="status.listMore=true">View More Works</a>
+            <a href="javascript:void(0)" class="hidden portfolio-more btn btn-dark" v-show="!status.listMore" @click="status.listMore=true">View More Works</a>
             <!-- /.container -->
         </section>
         <!-- Call to Action -->
@@ -202,7 +202,7 @@
                     </div>
                     <div class="modal-body">
                         <p v-text="modalWork.detail"></p>
-                        <img class="img-responsive" v-if="workCount" :src="'img/portfolio-'+(workCount-modalIndex)+'.jpg'">
+                        <img class="img-responsive" v-if="workCount" :src="'img/portfolio-'+modalWork.key+'.jpg'">
                     </div>
                     <div class="modal-footer">
                     </div>
