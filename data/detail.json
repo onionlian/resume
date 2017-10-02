@@ -7,6 +7,7 @@
     ],
 
     "works": [
+        {"key":"13", "title": "FHM 男人幫", "link": "http://www.fhm.com.tw/", "tags": ["Laravel", "jQuery", "RWD", "SCSS"], "detail": "網站改寫，使用Laravel。" },
         {"key":"11", "title": "iPhone 購機方案 - 中華電信大4G", "link": "http://iphone.emome.net/", "tags": ["RWD", "SCSS", "jQuery"], "detail": "活動頁面；將PSD製作成頁面，設定RWD。" },
         {"key":"10", "title": "ICA - 台中常春藤美式寄宿學校", "link": "http://ica.ivyjhs.tc.edu.tw/", "tags": ["RWD", "Wordpress", "Twig"], "detail": "Custom Plugin；自訂event post type，自訂short code撈取event post，使用twig template。" },
         {"key":"9", "title": "Lably", "link": "https://mylably.com/", "tags": ["RWD", "Wordpress", "Woocommerce", "Twig"], "detail": "Custom Plugin；在WooCommerce（購物車系統）上改寫成線上美甲課程，會員分成老師和學生，接第三方Api（zoom.us），使用twig template。" },
