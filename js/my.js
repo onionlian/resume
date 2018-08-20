@@ -27,7 +27,7 @@ var app = new Vue({
     methods: {
         init: function() {
             var that = this;
-            $.getJSON('data/detail.json?123', function(data) {
+            $.getJSON('data/detail.json?0820', function(data) {
                 // console.log(data);
                 that.my = data;
                 that.workCount = data.works.length;
