@@ -7,6 +7,9 @@
     ],
 
     "works": [
+        {"key":"17", "title": "未來商務產業焦點 Future Commerce Issue", "link": "https://fc.bnext.com.tw/", "tags": ["Wordpress"], "detail": "新網站，主要負責版面設定、客製化功能" },
+        {"key":"16", "title": "stylemaster", "link": "https://www.stylemaster.com.tw/", "tags": ["Wordpress"], "detail": "網站改寫，主要負責資料搬移、版面設定、客製化功能" },
+        {"key":"15", "title": "wikiwiki", "link": "https://pro.wikiwiki.cc/", "tags": ["Laravel"], "detail": "新網站，主要負責後台撰寫" },
         {"key":"14", "title": "error123.com", "link": "https://error123.com/", "tags": ["Wordpress", "Woocommerce"], "detail": "網站維護，功能新增微調" },
         {"key":"13", "title": "FHM 男人幫", "link": "http://www.fhm.com.tw/", "tags": ["Laravel", "jQuery", "RWD", "SCSS"], "detail": "網站改寫，使用Laravel。" },
         {"key":"11", "title": "iPhone 購機方案 - 中華電信大4G", "link": "http://iphone.emome.net/", "tags": ["RWD", "SCSS", "jQuery"], "detail": "活動頁面；將PSD製作成頁面，設定RWD。" },
