@@ -27,7 +27,7 @@
             "title": "Mombaby 媽媽寶寶懷孕生活網",
             "link": "https://www.mombaby.com.tw/",
             "tags": ["Laravel"],
-            "detail": "接手維護網站，主要負責後台修改、客製化功能"
+            "detail": "正職工作:接手維護網站，主要負責後台修改、客製化功能"
         },
 
         {
@@ -35,28 +35,29 @@
             "title": "WREADIT 銳誌",
             "link": "https://wreadit.com/",
             "tags": ["Laravel"],
-            "detail": "新網站，主要負責後台建立"
+            "detail": "正職工作:新網站，主要負責後台建立"
         },
         {
             "key": "17",
             "title": "未來商務產業焦點 Future Commerce Issue",
             "link": "https://fc.bnext.com.tw/",
             "tags": ["Wordpress"],
-            "detail": "新網站，主要負責版面設定、客製化功能"
+            "detail": "正職工作:新網站，主要負責版面設定、客製化功能"
         },
         {
             "key": "16",
             "title": "stylemaster",
             "link": "https://www.stylemaster.com.tw/",
             "tags": ["Wordpress"],
-            "detail": "網站改寫，主要負責資料搬移、版面設定、客製化功能"
+            "detail": "正職工作:網站改寫，主要負責資料搬移、版面設定、客製化功能"
         },
         {
             "key": "15",
             "title": "wikiwiki",
             "link": "https://pro.wikiwiki.cc/",
             "tags": ["Laravel"],
-            "detail": "新網站，主要負責後台撰寫"
+            "dead": 1,
+            "detail": "正職工作:新網站，主要負責後台撰寫"
         },
         {
             "key": "14",
@@ -70,14 +71,14 @@
             "title": "FHM 男人幫",
             "link": "http://www.fhm.com.tw/",
             "tags": ["Laravel", "jQuery", "RWD", "SCSS"],
-            "detail": "網站改寫，使用Laravel。"
+            "detail": "正職工作:網站改寫，使用Laravel。"
         },
         {
             "key": "11",
             "title": "iPhone 購機方案 - 中華電信大4G",
             "link": "http://iphone.emome.net/",
             "tags": ["RWD", "SCSS", "jQuery"],
-            "detail": "活動頁面；將PSD製作成頁面，設定RWD。"
+            "detail": "正職工作:活動頁面；將PSD製作成頁面，設定RWD。"
         },
         {
             "key": "10",
@@ -105,6 +106,7 @@
             "title": "GENESUS",
             "link": "http://genesus.co/",
             "tags": ["RWD", "Laravel", "Angular"],
+            "dead": 1,
             "detail": "新網站；主要負責Backend，javascript。"
         },
         {
@@ -141,12 +143,13 @@
             "title": "Ptt推文計算 ＆ youtube播放",
             "link": "http://z358z358.qov.tw/",
             "tags": ["RWD", "jQuery", "Bootstrap"],
+            "dead": 1,
             "detail": "練習小工具；Ptt推文計算，Ptt撈youtube link並依序播放。"
         },
         {
             "key": "2",
             "title": "Gamebase",
-            "link": "http://www.gamebase.com.tw/",
+            "link": "https://www.gamebase.com.tw/",
             "tags": ["php", "jQuery"],
             "detail": "正職工作；維護網站，主要負責會員、活動。"
         },
