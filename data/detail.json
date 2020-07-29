@@ -26,7 +26,7 @@
             "key": "19",
             "title": "Mombaby 媽媽寶寶懷孕生活網",
             "link": "https://www.mombaby.com.tw/",
-            "tags": ["Laravel"],
+            "tags": ["Laravel", "jQuery"],
             "detail": "正職工作:接手維護網站，主要負責後台修改、客製化功能"
         },
 
@@ -34,8 +34,8 @@
             "key": "18",
             "title": "WREADIT 銳誌",
             "link": "https://wreadit.com/",
-            "tags": ["Laravel"],
-            "detail": "正職工作:新網站，主要負責後台建立"
+            "tags": ["Laravel", "Vue"],
+            "detail": "正職工作:新網站，主要負責後台建立，已移交給另一個公司"
         },
         {
             "key": "17",
