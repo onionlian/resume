@@ -23,6 +23,13 @@
 
     "works": [
         {
+            "key": "20",
+            "title": "Beauty2trs",
+            "link": "https://beauty2trs.com/",
+            "tags": ["Wordpress", "Woocommerce"],
+            "detail": "Lably轉賣後，改版的網站"
+        },
+        {
             "key": "19",
             "title": "Mombaby 媽媽寶寶懷孕生活網",
             "link": "https://www.mombaby.com.tw/",
@@ -91,6 +98,7 @@
             "key": "9",
             "title": "Lably",
             "link": "https://mylably.com/",
+            "dead": 1,
             "tags": ["RWD", "Wordpress", "Woocommerce", "Twig"],
             "detail": "Custom Plugin；在WooCommerce（購物車系統）上改寫成線上美甲課程，會員分成老師和學生，接第三方Api（zoom.us），使用twig template。"
         },
