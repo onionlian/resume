@@ -23,6 +23,13 @@
 
     "works": [
         {
+            "key": "21",
+            "title": "Cool",
+            "link": "https://www.cool-style.com.tw/wd2/",
+            "tags": ["Wordpress"],
+            "detail": "正職工作:搬家後接手維護網站，換theme，客製化功能"
+        },
+        {
             "key": "20",
             "title": "Beauty2trs",
             "link": "https://beauty2trs.com/",
