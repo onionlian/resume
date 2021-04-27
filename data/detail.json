@@ -23,6 +23,20 @@
 
     "works": [
         {
+            "key": "23",
+            "title": "毅傳媒 - 最棒的新聞媒體網站",
+            "link": "https://yimedia.com.tw/",
+            "tags": ["Wordpress"],
+            "detail": "正職工作:搬家後接手維護網站，客製化功能，增進效能"
+        },
+        {
+            "key": "22",
+            "title": "iBEAUTY 留住妳的美好時光",
+            "link": "https://ibeauty.poya.com.tw/",
+            "tags": ["Laravel", "Livewire"],
+            "detail": "正職工作:全新形象網站"
+        },
+        {
             "key": "21",
             "title": "Cool",
             "link": "https://www.cool-style.com.tw/wd2/",
